@@ -8,15 +8,18 @@ softImpute-based code is all in run_softImpute directory:
 
 setup_data.R and setup_misc.R -- simple scripts for QC and printing out some data summaries (output in Rout/)
 
-estimate_imp_r2.R -- estimates imputation correlation and MSE using copy-masking or random masking
-plot_imp_r2.R -- generates Extended Data Fig 1 summarizing softImpute performance
+run.R -- estimates imputation correlation and MSE using copy-masking or random masking
+run_saveimputes.R -- saves imputed values for downstream plotting (eg SuppFig1)
+run_MTAG_variables.R -- for SuppFig 2A
+run_sex_strat.R -- for SuppFig 2B,C
+run_wbmi.R -- for SuppFig 2D
 
 predstrength.R -- applies softImpute to two halves of the real phenotype matrix
-plot_predstrength.R -- calculates and plots the r2 between factors estimated from separate halves of the phenotype matrix
 
 final.R -- applies softImpute to the real phenotype matrix, generating the imputed phenotypes used in GWAS/PRS/etc; also generates Fig3a+c
 
 my_softImpute.R -- softImpute wrapper. Based closely on script from Dahl et al 2016 Nature Genetics, which is based closely on a Trevor Hastie vignette: http://web.stanford.edu/~hastie/swData/softImpute/vignette.html
+
 
 *************
 PRS Pleiotropy code is all in PRS_pleio directory:
