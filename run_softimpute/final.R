@@ -73,8 +73,6 @@ points( y, col='grey', pch=16 )
 axis(1); axis(2) 
 
 sub		<- c(1:5,10,20,30)
-#cols	<- rep( c( 3, 4, 1, 'purple' ), 2 )
-#cols <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#F0E442", "#CC79A7", "#000000") ## Okabe_Ito 
 cols <- c("#E69F00", "#56B4E9", "#D55E00", "#009E73", "#0072B2", "#000000", "#000000", "#000000") ## Okabe_Ito 
 points( sub, y[sub], col=cols, pch=16 )
 
@@ -87,16 +85,3 @@ x[5] <- x[5] + 15
 text( x, y[sub]+c(0,0,0,.05,.015,.015,.04,.04), col=cols, c( factornames, '#10', '#20', '#30' ), cex=1.0 )
 
 dev.off()
-########################
-
-#np	<- length(y)
-#mp	<- RMTstat:::qmp( 1:np/(1+np), ndf=370*1e3, pdim=np  )
-#mp	<- mp / sum(mp) * 100
-#points( np:1, mp, col='grey', pch=16 )
-
-#round( out$d, 2 )
-#names(out) 
-#quantile(apply( out$v, 2, mean ) )
-#quantile(apply( out$v^2, 2, sum ) )
-#quantile(apply( out$u, 2, mean ) )
-#quantile(apply( out$u^2, 2, sum ) )
