@@ -1,5 +1,6 @@
 # mdd-impute
-Code to reproduce analyses in "Phenotype integration improves power and preserves specificity in biobank-based genetic studies of MDD": https://www.biorxiv.org/content/10.1101/2022.08.15.503980v2
+Code to reproduce analyses in "Phenotype integration improves power and preserves specificity in biobank-based genetic studies of MDD":
+https://www.biorxiv.org/content/10.1101/2022.08.15.503980v2
 
 
 *************
