@@ -1,11 +1,6 @@
 library(softImpute)
 my_softImpute <- function( Y, lambda.len=100, maxrank=TRUE, fixed.maxrank=ncol(Y)-1, nfolds=10, verbose=T, return_udv=FALSE ){
 
-	## mus	<- colMeans( Y, na.rm=T )
-	## Y		<- Y - matrix( mus, nrow(Y), ncol(Y), byrow=T ) 
-	## sigs<- colMeans( Y^2, na.rm=T )
-	## Y		<- Y / matrix( sqrt(sigs), nrow(Y), ncol(Y), byrow=T )
-
 	obs	  <- which( ! is.na( Y ) )
 	n_obs	  <- length(obs)
 	folds	  <- split( obs, sample( rep( 1:nfolds, n_obs )[1:n_obs], n_obs ) )
@@ -48,8 +43,6 @@ my_softImpute <- function( Y, lambda.len=100, maxrank=TRUE, fixed.maxrank=ncol(Y
 	out			<- softImpute( x=Y, rank.max = ncol(Y), lambda = lambda, maxit=1000 )
 	Yhat		<- complete( Y, out ) 
 
-	#Yhat		<- Yhat / matrix( sqrt(sigs), nrow(Y), ncol(Y), byrow=T )
-	#Yhat		<- Yhat + matrix( mus       , nrow(Y), ncol(Y), byrow=T )
 	if( return_udv ){
 		u	<- out$u
 		d	<- out$d
