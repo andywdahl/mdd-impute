@@ -1,5 +1,5 @@
 # mdd-impute
-Code to reproduce analyses in MDD phenotype imputation paper: "softImpute" by Dahl, ..., Cai
+Code to reproduce analyses in "Phenotype integration improves power and preserves specificity in biobank-based genetic studies of MDD": https://www.biorxiv.org/content/10.1101/2022.08.15.503980v2
 
 
 *************
@@ -24,4 +24,4 @@ reshape_data.R -- transforms matrix of results for each (pheno,PRS,fold) triple 
 
 qc.R -- removes uninteresting secondary phenos, eg assessment center, genotype PCs
 
-Fig6.R and Fig6_resid -- creates Figure 6 and Extended Data Figure 4
+Fig6.R -- creates Figure 6 and Extended Data Figure 4
